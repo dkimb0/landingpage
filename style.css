@@ -69,3 +69,54 @@ button {
     border-radius: 8px;
     color: #F9faf8;
 }
+
+.blocktwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+.cardimage {
+    height: auto;
+    width: 180px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    margin: 20px;
+}
+
+.cardtext {
+    text-align: center;
+
+}
+
+.blockthree {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0, 500px; */
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quoteby {
+    font-weight: bold;
+    align-self: flex-end;
+}
