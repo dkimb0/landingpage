@@ -41,7 +41,7 @@ a {
 .blockone {
     background-color: #1F2937;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 100px;
 }
 
@@ -55,6 +55,11 @@ a {
 .blockoneright {
     max-width: 400px;
     height: auto;
+}
+
+.blockonecontent {
+    display: flex;
+    gap: 150px;
 }
 
 .heromaintext {
