@@ -142,3 +142,29 @@ button {
     margin-bottom: 60px;
     font-size: 18px;
 }
+
+.blockfour {
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+
+.calltoaction {
+    display: flex;
+    background-color: #3882f6;
+    padding: 24px 48px;
+    gap: 24px;
+}
+
+.calltoactiontext {
+
+}
+
+.calltoactionmain {
+    font-weight: bold;
+    color:#F9faf8;
+}
+
+.calltoactionsub {
+    color:#F9faf8;
+}
