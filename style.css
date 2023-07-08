@@ -75,6 +75,7 @@ a {
 
 button {
     width: 80px;
+    height: 40px;
     background-color: #3882f6;
     border-radius: 8px;
     color: #F9faf8;
@@ -152,8 +153,11 @@ button {
 .calltoaction {
     display: flex;
     background-color: #3882f6;
-    padding: 24px 48px;
-    gap: 24px;
+    padding: 24px 96px;
+    width: 800px;
+    justify-content: space-between;
+    border-radius: 16px;
+    align-items: center;
 }
 
 .calltoactiontext {
@@ -167,4 +171,14 @@ button {
 
 .calltoactionsub {
     color:#F9faf8;
+}
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+}
+
+.footertext {
+    color: #F9faf8;
 }
