@@ -1,20 +1,21 @@
 body > * {
+    /* adds padding to whole body */
     padding: 0 200px;
+    /* sets font for whole body */
     font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
-.blocktwo,
-.blockthree {
-    padding: 0 300px;
-}
-
 .header {
+    /* whole header becomes flex */
     display: flex;
+    /* sets deep blue bkg color */
     background-color: #1F2937;
+    /* adds padding before hero section */
     padding-bottom: 100px;
 }
 
 ul {
+    /* removes list bullet styles */
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -22,23 +23,33 @@ ul {
 
 .headerlogo {
     color: #F9faf8;
+    /* grows logo container to take up half the space */
+    flex-grow: 1;
 }
 
 .headerlink {
+    /* makes links flex */
     display: flex;
-    flex: 1;
+    /* makes links go to right */
     justify-content: flex-end;
+    
+    /* vertical centering */
     align-items: center;
+    /* adds gap between links */
     gap: 24px;
 }
 
 a {
+    /* removes link underline */
     text-decoration: none;
+
     color: #e5e7eb;
     font-size: 18px;  
 }
 
 .blockone {
+    /* hero block, sets color, flex, padding and
+    centers the row-based child container blockonecontent */
     background-color: #1F2937;
     display:flex;
     justify-content: center;
@@ -47,47 +58,68 @@ a {
 
 .blockoneleft {
     display: flex;
+    /* column of hero text, subtext and button */
     flex-direction: column;
+    /* allows content to wrap */
     flex-wrap: wrap;
-    width: 400px;
+    /* sets width of container */
+    width: 420px;
 }
 
 .blockoneright {
-    max-width: 400px;
+    /* this block is just the img */
+    max-width: 420px;
     height: auto;
 }
 
 .blockonecontent {
+    /* this block is the whole container */
     display: flex;
+    /* setting the gap between the text and picture */
     gap: 150px;
 }
 
 .heromaintext {
+    /* set font of hero text */
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+
+    /* set spacing between text and subtext */
+    margin-bottom: 0;
 }
 
 .herosubtext {
+    /* set subtext font */
     font-size: 18px;
+    font-weight: 100;
     color: #e5e7eb;
+
+    /* set spacing between hero and subtext */
+    margin-top: 0;
+
 }
 
 button {
-    width: 80px;
+    /* button settings */
+    width: 128px;
     height: 40px;
     background-color: #3882f6;
     border-radius: 8px;
     color: #F9faf8;
+    border: 2px solid #3882f6;
 }
 
 .blocktwo {
+    /* block two set up as centered column, centered horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px 0 100px;
 }
 
 .container {
+    /* overall container of all 4 cards and texts (no header!)*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,9 +128,11 @@ button {
 .cardimage {
     height: auto;
     width: 180px;
+    border-radius: 16px;
 }
 
 .cardcontainer {
+    /* individual container of card + text */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,24 +141,27 @@ button {
 }
 
 .cardtext {
+    /* didn't bother with flex here */
     text-align: center;
-
+    font-weight: 100;
 }
 
 .blockthree {
+    /* quote block */
     background-color: #e5e7eb;
-    width: auto;
-    padding: 0 300px;
+
+    /* Set centered column */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.quoteblock {
+.quotecontainer {
+    /* Set another quote block to hold the quote and attribution */
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    max-width: 880px;
 }
 
 .quote {
@@ -138,6 +175,7 @@ button {
 
 .quoteby {
     font-weight: bold;
+    /* set the attribution to far right of container */
     align-self: flex-end;
     margin-top: 0;
     margin-bottom: 60px;
@@ -145,12 +183,13 @@ button {
 }
 
 .blockfour {
+    /* call to action block */
     display: flex;
     justify-content: center;
     padding: 48px;
 }
 
-.calltoaction {
+.cta {
     display: flex;
     background-color: #3882f6;
     padding: 24px 96px;
@@ -160,23 +199,28 @@ button {
     align-items: center;
 }
 
-.calltoactiontext {
-
-}
-
-.calltoactionmain {
+.ctamain {
     font-weight: bold;
+    font-size: 22px;
     color:#F9faf8;
+    margin-bottom: 0;
 }
 
-.calltoactionsub {
+.ctasub {
     color:#F9faf8;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+.ctabutton {
+    border: 2px solid #F9faf8;
 }
 
 .footer {
     background-color: #1F2937;
     display: flex;
     justify-content: center;
+    padding: 24px 0;
 }
 
 .footertext {
