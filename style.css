@@ -190,11 +190,16 @@ button {
 }
 
 .cta {
+    /* Call to action blue bubble */
     display: flex;
     background-color: #3882f6;
-    padding: 24px 96px;
     width: 800px;
+    
+    /* padding + space-between means the text and button are far apart
+    but they're also padded from edges */
+    padding: 24px 96px;
     justify-content: space-between;
+
     border-radius: 16px;
     align-items: center;
 }
@@ -213,6 +218,7 @@ button {
 }
 
 .ctabutton {
+    /* special formatting just for this button to add white outline */
     border: 2px solid #F9faf8;
 }
 
